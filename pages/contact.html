@@ -27,11 +27,32 @@
             <li>Website design</li>
             <li>Logo design</li>
             <li>Social media management</li>
-        </ul>
+        </ul><br>
+        
+        <form align="center">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            Message:<br>
+            <input type="text" name="message"><br>
+            <div class="popup" onclick="myFunction()"><input type="submit" value="Submit">
+            <span class="popuptext" id="myPopup">Success!</span>
+            </div>
+        </form><br>
     
         <h3 style="text-align:center">Contact information:</h3>
             <p style="text-align:center">Email: kristyn.granahan@gmail.com</p>
             <p style="text-align:center">Phone:708-712-4385</p>
+    
+    <script>
+         // When the user clicks on <div>, open the popup
+         function myFunction() {
+             var popup = document.getElementById("myPopup");
+             popup.classList.toggle("show");
+         }
+    </script>   
+                
     
     </body>
 
